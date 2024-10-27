@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-color: beige;
+
+}
+
+
+body{
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+h1{
+    position: relative;
+    font-family: "Merriweather", serif;
+    color: #848d62;
+    font-size: x-large;
+    opacity: 0.7;
+}
+
+.container-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en la pantalla */
+}
+
+.Nombre-tienda,
+.Logo-tienda {
+    max-width: 100%; /* Evita distorsión */
+    height: auto; /* Mantiene proporciones */
+    margin: 20px 0; /* Espacio entre imágenes y texto */
+}
+
+.hero {
+    color: #848d62;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+}
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    padding: 130px 0 0 0;
+}
+
+.header .Logo-tienda{
+    background-color: #f5f5dc;
+    color: #848d62;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+ 
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #111419;
+    display: block;
+    
+}
+.menu .navbar ul li a:hover{
+    color: #848d62;
+}
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #848d62;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+th,td{
+    color: white;
+
+}
+
+.borrar{
+    background-color: #848d62;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+span{
+    color: #848d62;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.header-txt h3{
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #848d62;
+    margin-bottom: 35px;
+}
+
+.header-txt p{
+    font-size: 17px;
+    color: #515557;
+    margin-bottom: 35px;
+}
+
+.butons{
+    display: flex;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #848d62;
+    margin-right: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    height: 550px;
+}
+
+.prendas-superiores-masculinas{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+.prendas-inferiores-masculinas{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+.accesorio-masculino{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+.Aseo-Masculino{
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    color: #111419;
+}
+
+.box-container{
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box{
+    border-top: 2px solid #848d62;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f6faf8;
+    display: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9),
+.box:nth-child(10){
+    display: inline-block;
+}
+
+.box img{
+    height: 200px;
+}
+
+.product-txt h3{
+    font-size: 20px;
+    color: #111419;
+    margin-bottom: 10px;
+}
+
+.product-txt p{
+    margin-bottom: 25px;
+    color: black;
+}
+
+.precio{
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+.btn-2, .btn-3, .btn-1{
+   background-color: #848d62;
+   margin-top: 50px;
+   display: inline-block;
+   padding: 11px 35px;
+   border-radius: 25px;
+   color: #f6faf8;
+   font-size: 16px;
+   cursor: pointer;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-2:hover, .btn-3:hover, .btn-1:hover{
+    background-color: darkolivegreen;
+}
+
+.btn-3{
+   margin: 0;
+   padding: 8px 25px;
+   border-radius: 5px;
+   margin-top: 50px;
+   display: inline-block;
+   padding: 11px 35px;
+   border-radius: 25px;
+   color: #f6faf8;
+   font-size: 16px;
+   cursor: pointer;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+    text-align: center;
+    color: #848d62;
+    
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+}
+
+@media(max-width:991px){
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(42, 61, 10);
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #848d62;
+    }
+
+    .submenu:hover #carrito{
+        width: 100%;
+    }
+
+    .header{
+        padding: 50px 0 0 0;
+    }
+
+    .header-content{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin-right: 0;
+    }
+
+    .butons{
+        justify-content: center;
+    }
+
+    .btn-1{
+        margin-bottom: 0;
+    }
+
+    .header-img{
+        display: none;
+    }
+
+    .prendas-superiores-masculinas{
+        padding: 0  30px 30px 30px;
+    }
+    
+    .prendas-inferiores-masculinas{
+        padding: 0  30px 30px 30px;
+    }
+    
+    .accesorio-masculino{
+        padding: 0  30px 30px 30px;
+    }
+    
+    .Aseo-Masculino{
+        padding: 0  30px 30px 30px;
+    }
+
+}
